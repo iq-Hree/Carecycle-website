@@ -1,0 +1,55 @@
+.gift {
+    padding: var(--space-3xl) 0 var(--space-4xl);
+    background: var(--pale-blue);
+}
+
+.gift__card {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: var(--space-2xl);
+    text-align: center;
+    background: var(--warm-white);
+    border: 1px dashed var(--soft-lavender);
+}
+
+.gift__heart-wrap {
+    margin-bottom: var(--space-sm);
+}
+
+.gift__heart {
+    display: inline-block;
+    font-size: 32px;
+    color: var(--muted-mauve);
+}
+
+.gift__heart--pulse {
+    animation: heartPulse 2.5s ease-in-out infinite;
+}
+
+.gift__label {
+    display: block;
+    font-size: var(--fs-xs);
+    font-weight: 800;
+    color: var(--deep-navy);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: var(--space-md);
+    opacity: 0.6;
+}
+
+.gift__message {
+    font-size: var(--fs-md);
+    font-weight: 600;
+    color: var(--deep-navy);
+    line-height: 1.8;
+}
+
+@media (max-width: 480px) {
+    .gift__card {
+        padding: var(--space-lg);
+    }
+
+    .gift__message {
+        font-size: var(--fs-base);
+    }
+}
